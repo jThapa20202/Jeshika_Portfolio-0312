@@ -3,45 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My protfolio</title>
+    <title>My portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 </head>
 <body>
 <header class="navbar">
-        <!-- <a href="#nav" class="nav">My protfolio</a> -->
-
         <nav class="navbar">
-            <a href="#home" class="active">Home</a> |
-            <a href="#about me">About Me</a> |
-            <a href="#education">Education</a> |
-            <a href="#projects">Projects</a> |
+            <a href="#home" class="active">Home</a>     
+            <a href="#about me">About Me</a>    
+            <a href="#education">Education</a>      
+            <a href="#projects">Projects</a>        
             <a href="#contact">Contact</a>
         </nav>
 </header>
 <section id="home">
     <div class="home">
-        <h2>Hi! My name is Jeshika Thapaliya.</h2>
-        <p>I am web developer currently studying BIT at Biratnagar International College.</p>
-
+        <h1>💫Portfolio💫</h1>
+        <div class="intro-wrapper"></div>
+            <div class="intro">
+                <h2>Hi! My name is Jeshika Thapaliya.</h2>
+                <p>I’m a BIT student at Biratnagar International College, currently learning<br>
+                and exploring web development. I enjoy creating simple, functional projects<br>
+                and improving my skills through hands-on practice.</p>
+            </div>
+            <img class="intro-img" src="cartoon.png" alt="cartoon">
+        </div>
     </div>
 </section>
 <section id="about me">
-    <div class="About Me">
-        <h2>About Me</h2>
-        <P>My name is Jeshika Thapaliya. I have always been hardworking and dedicated student. </P>
+   <div class="AboutMe">
+    <h2>About Me</h2>
+
+    <div class="content">
+        <p>My name is Jeshika Thapaliya.I am a hardworking and motivated student currently pursuing my studies in technology and programming. 
+        I enjoy learning new skills and exploring different areas of software development as I continue to grow academically and personally.
+        I am passionate about improving myself, taking on challenges, and staying consistent in everything I do. I aim to build a strong
+        foundation in my field and work towards achieving my goals with dedication and a positive mindset. </p>
+
+        <div class="image">
+            <img src="images.jpeg" alt="Jeshika Thapaliya">
+            <p>🌟 Dream big. Work hard. Stay kind. 💖</p>
+        </div>
     </div>
+</div>
 </section>
 <section id="education">
     <div class="education">
         <h2>Education</h2>
-        <div>enter</div>
-        
+
+        <div class="edu-card">
+            <h3>School Level Education</h3>
+            <p>Allied Secondary English Boarding School, Damak-8, Jhapa</p>
+        </div>
+
+        <div class="edu-card">
+            <h3>Higher Level Education</h3>
+            <p>Pathibhara English Boarding School, Damak-4, Jhapa</p>
+        </div>
+
+        <div class="edu-card">
+            <h3>Bachelors Level Education</h3>
+            <p>Biratnagar International College, Biratnagar</p>
+        </div>
+
+        <p class="edu-description">
+            I am currently pursuing my studies in Information Technology, focusing on 
+            programming, software development, and web technologies. I am learning HTML, CSS, JavaScript, PHP, Java,
+            and gaining strong knowledge in databases and software design. I believe consistency and curiosity drive success! 🌟
+        </p>
     </div>
 </section>
-
-
-
-
-    
+<section id="projects">
+    <div class="projects">
+        <h2>Projects</h2>
+        <div class="container">
+            <div class="project-card">
+                <img src="project1.png" alt="Project1">
+                <h3>BloodConnect</h3>
+                <p>Developed a group project: a blood donation platform connecting donors 
+                and receivers during emergencies using HTML, CSS, JavaScript, and PHP.</p>
+            </div>
+            <div class="project-card">
+                <img src="project2.png" alt="Project1">
+                <h3>Rock Paper Scissors</h3>
+                <p>Created a game using HTML, CSS , and JavaScript that allows users to play with computer.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <div class="contact">
+        <h2>Contact</h2><br>
+        <p>For more Information 👇</p><br>
+        <div class="contact-box">
+            <form id="contactForm">
+                <label for="name">Name:<br></label>
+                <input type="name" id="name" class="form-field" name="name" placeholder="Name"><br><br>
+                <label for="email">Email:<br></label>
+                <input type="email" id="email" class="form-field" name="email" placeholder="Email"><br><br>
+                <label for="message">Message:<br></label>
+                <textarea id="message"name="message" class="form-field" placeholder="Your message here"></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="social-icons">
+        <a href="https://www.facebook.com/jeshikathapaliya" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/jeshikathapaliya" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="mailto:thapaliya.jeshika@email.com">
+            <i class="fa-solid fa-at"></i>
+        </a>
+</div>
+    </div>
+</section>   
 </body>
+<footer>
+    <p>&copy; 2025 Jeshika Thapaliya. All rights reserved.</p>
+</footer>
 </html>
