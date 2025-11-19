@@ -57,6 +57,7 @@
     
 }
 .intro-img{
+    display: block;
     width: 442px;  
     height: auto;
     border-radius: 10px;
