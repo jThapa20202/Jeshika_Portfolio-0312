@@ -148,14 +148,54 @@
     width: 50%;
     margin: 0 auto;
 }
-.projects{
+.skill{
     background-color: #ffc2c2;
+    height: 100vh;
+}
+.skill h2{
+    font-family: cursive;
+    font-size: 70px;
+    color: #fafac7;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.skill p{
+    font-family: 'Poppins', Quicksand;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    text-align: center;   
+    padding: 0;
+    margin-bottom: 20px;
+}
+.skill .bar {
+    width: 60%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin: 0 auto 30px auto;
+    overflow: hidden;
+    height: 25px;
+}
+.bar .progress{
+    width:0;
+    height: 25px;
+    background-color: #fafac7;
+    line-height: 25px;
+    border-radius: 20px;
+    transition: width 2s ease-in-out;
+    text-align: center;
+    font-family: 'Poppins', Quicksand;
+}
+.projects{
+    background-color: #fafac7;
     height: 100vh;
 }
 .projects h2{
     font-family: cursive;
     font-size: 70px;
-    color: #fafac7;
+    color: #ffc2c2;
     text-align: center;
     padding: 20px;
     font-weight: bold;
@@ -169,7 +209,7 @@
     padding: 0 120px;
 }
 .project-card {
-    background: #fafac7; 
+    background: #ffc2c2; 
     padding: 10px;
     width: 400px;
     height: 520px;
@@ -180,7 +220,7 @@
     width: 350px;
     height: 350px;
     border-radius: 10px;
-    border: 4px solid #ffc2c2; 
+    border: 4px solid #fafac7; 
 }
 .project-card h3 {
     margin-top: 10px;
@@ -196,13 +236,13 @@
     text-align: center;
 }
 .contact{
-    background-color: #fafac7;
+    background-color: #ffc2c2;
     height: 100vh;
 }
 .contact h2{
     font-family: cursive;
     font-size: 70px;
-    color: #ffc2c2;
+    color: #fafac7;
     text-align: center;
     padding: 20px;
     font-weight: bold;
@@ -216,7 +256,7 @@
     padding: 0;
 }
 .contact-box{
-    background-color: #ffc2c2;  
+    background-color: #fafac7;  
     padding: 30px;               
     max-width: 400px;            
     margin: 0 auto;             
@@ -230,7 +270,7 @@
     justify-content: center;
     gap: 15px;
     margin-top: 20px;
-    background-color: #ffc2c2;
+    background-color: #fafac7;
 }
 label {
     font-weight: bold;
@@ -256,7 +296,7 @@ label {
 input[type="submit"] {
     width: 20%;
     padding: 10px;
-    background-color: #fafac7;
+    background-color: #ffc2c2;
     color: black;
     border: none;
     border-radius: 5px;
@@ -269,7 +309,7 @@ input[type="submit"]:hover {
 #font{
     font-size: 30px;
     margin: 10px;
-    color: #ffc2c2;
+    color: #fafac7;
 }
 #font:hover{
     color: #f4c542;
@@ -281,13 +321,13 @@ input[type="submit"]:hover {
 .social-icons i{
     font-size: 30px;
     margin: 10px;
-    color: #ffc2c2;
+    color: #fafac7;
 }
 .social-icons i:hover{
     color: #f4c542;
 }
 footer{
-    background-color: #ffc2c2;
+    background-color: #fafac7;
     text-align: center;
     padding: 2px;
     font-family: 'Poppins', Quicksand;

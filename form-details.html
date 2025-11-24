@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Details</title>
+
+    <style>
+        body {
+            background-color: #fafac7;
+            height: 100vh;
+            font-family: 'Poppins', Quicksand;
+            font-size: 20px;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .details-container {
+            background: #ffc2c2;
+            padding: 25px 35px;
+            border-radius: 10px;
+            width: 350px;
+
+        }
+        h2 {
+            text-align: center;
+            color: #fafac7;
+            margin-bottom: 15px;
+        }
+        .item {
+            font-size: 18px;
+            margin: 10px;
+        }
+        button {
+            margin-top: 20px;
+            width: 40%;
+            padding: 10px;
+            background: #fafac7;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #f935be;
+        }
+    </style>
+</head>
+<body>
+
+<div class="details-container">
+    <h2>Submition Details</h2>
+
+    <div class="item"><strong>Name:</strong> <span id="Name"></span></div>
+    <div class="item"><strong>Email:</strong> <span id="Email"></span></div>
+    <div class="item"><strong>Message:</strong> <span id="Message"></span></div>
+
+    <button onclick="goBack()">Go Back</button>
+</div>
+
+<script>
+    document.getElementById("Name").textContent = localStorage.getItem("name");
+    document.getElementById("Email").textContent = localStorage.getItem("email");
+    document.getElementById("Message").textContent = localStorage.getItem("message");
+
+    function goBack() {
+        window.location.href = "index.html"; 
+    }
+</script>
+
+</body>
+</html>
+
+
+
