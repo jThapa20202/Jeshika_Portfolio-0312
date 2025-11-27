@@ -54,3 +54,94 @@ form.addEventListener('submit', function(event) {
     }   
 });
 
+const cards = document.querySelectorAll('.project-card');
+
+    cards.forEach(card => {
+        card.style.cursor = "pointer";   
+        card.addEventListener('click',() => {
+            const url = card.getAttribute('data-url');
+            window.location.href = url;
+        });
+});
+
+const canvas = document.getElementById("myCanvas");
+const ct = canvas.getContext("2d");
+    
+    ct.beginPath();
+    ct.moveTo(10, 140);
+    ct.lineTo(100, 40);
+    ct.lineTo(190, 110);
+    ct.lineTo(280, 10);
+    ct.strokeStyle = "gold";
+    ct.shadowColor = "rgba(255, 255, 255, 1)";
+    ct.shadowBlur = 10;
+    ct.lineWidth = 6;
+    ct.stroke();
+    ct.font = "16px Arial";
+    ct.fillText("Keep Climbing", 100, 145);
+
+
+
+const slides = document.querySelectorAll('.slide-container');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+
+let currentIndex = 0;
+
+// Function to show the slide at currentIndex
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.style.display = i === index ? 'block' : 'none';
+  });
+}
+
+// Initial display
+showSlide(currentIndex);
+
+// Next button
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
+});
+
+// Previous button
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  showSlide(currentIndex);
+});
+
+
+
+const toggleBtn = document.getElementById('theme-toggle');
+softModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('soft-mode');
+
+    if(document.body.classList.contains('soft-mode')){
+        softModeToggle.textContent = '🌞'; 
+    } else {
+        softModeToggle.textContent = '💡'; 
+    }
+});
+
+const backToTopBtn = document.getElementById('Topbtn');
+
+// Show button when user scrolls down 300px
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    backToTopBtn.style.display = 'block';
+  } else {
+    backToTopBtn.style.display = 'none';
+  }
+});
+
+
+backToTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+
+
+

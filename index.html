@@ -15,8 +15,12 @@
             <a href="#about me">About Me</a>    
             <a href="#education">Education</a> 
             <a href="#skills">Skills</a>     
-            <a href="#projects">Projects</a>        
+            <a href="#projects">Projects</a>
+            <a href="#gallery">Gallery</a>        
             <a href="#contact">Contact</a>
+            
+            <button id="softModeToggle">💡</button>
+
         </nav>
 </header>
 <section id="home">
@@ -107,25 +111,62 @@
         </div>
     </div>
 </section>
-
-  
 <section id="projects">
     <div class="projects">
         <h2>Projects</h2>
         <div class="container">
-            <div class="project-card">
+            <div class="project-card" data-url="https://bloodconnect.unaux.com">
                 <img src="images/project1.png" alt="Project1">
                 <h3>BloodConnect</h3>
                 <p>Developed a group project: a blood donation platform connecting donors 
                 and receivers during emergencies using HTML, CSS, JavaScript, and PHP.</p>
             </div>
-            <div class="project-card">
+            <div class="project-card" data-url="https://jthapa20202.github.io/RockPaperScissor/">
                 <img src="images/Project2.png" alt="Project2">
                 <h3>Rock Paper Scissors</h3>
                 <p>Created a game using HTML, CSS , and JavaScript that allows users to play with computer.</p>
             </div>
+            <div class="project-card" data-url="https://jthapa20202.github.io/Basic_Calculator0312/">
+                <img src="images/Project3.png" alt="Project3">
+                <h3>Basic calculator</h3>
+                <p>Built a simple calculator application using HTML, CSS, and JavaScript to perform basic arithmetic operations.</p>
         </div>
     </div>
+</section>
+<section id="gallery">
+  <div class="gallery">
+    <h2>Gallery of Wonders</h2>
+    <div class="gallery-container">
+      <video controls width="300">
+        <source src="Videos/2025-11-26-214355624.mp4" type="video/mp4">
+      </video>
+
+      <audio controls>
+        <source src="Audio/audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+
+      <canvas id="myCanvas"></canvas>
+
+      <div class="slider">
+        <button class="prev">&#10094;</button>
+        <div class="slide-container">
+          <img src="images/pic1.jpeg" class="slide"/>
+        </div>
+        <div class="slide-container">
+          <img src="images/pic2.jpeg" class="slide"/>
+        </div>
+        <div class="slide-container">
+          <img src="images/pic3.jpeg" class="slide"/>
+        </div>
+        <div class="slide-container">
+          <img src="images/pic4.jpeg" class="slide"/>
+        </div>
+        <button class="next">&#10095;</button>
+      </div>
+
+    </div>
+  </div>
 </section>
 <section id="contact">
     <div class="contact">
@@ -156,6 +197,7 @@
 </div>
     </div>
 </section> 
+<button id="Topbtn" title="Go to top">↑</button>  
 <script src="script.js"></script>  
 </body>
 <footer>

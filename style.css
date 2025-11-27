@@ -3,6 +3,15 @@
     padding: 0;
     
 }
+.soft-mode {
+  filter: brightness(0.85);  
+  transition: filter 0.3s ease;
+}
+.soft-mode .prev,
+.soft-mode .next,
+.soft-mode #softModeToggle {
+  filter: brightness(1); 
+}
 .navbar{
     display: flex;
     justify-content: right;
@@ -22,6 +31,20 @@
 .navbar a:hover{
     color: #ffffff;
     text-decoration: none;
+}
+.navbar button{
+    padding: 5px ;
+    width: 50px;
+    background: #fafac7;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 2px #f3f1f1;
+}
+.navbar button:active{
+    box-shadow: none;
+    transform: translateY(2px);  
 }
 .home {
     background-color: #fafac7; 
@@ -235,14 +258,102 @@
     margin-top: 10px;
     text-align: center;
 }
-.contact{
+.project-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px #fbb6b6;
+}
+.gallery{
     background-color: #ffc2c2;
+    height: 100vh;
+}
+.gallery h2{
+    font-family: cursive;
+    font-size: 70px;
+    color: #fafac7;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.gallery-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.gallery video{
+    border: 6px solid #fafac7;
+    border-radius: 10px;
+}
+.gallery audio{
+    border: 6px solid #fafac7;
+    border-radius: 32px;
+    padding: 10px;
+    width: 250px; 
+    outline: none;
+    cursor: pointer;
+}
+.gallery canvas{
+    width: 300px;
+    height: 200px;
+    border: 6px solid #fafac7;
+    border-radius: 10px;
+}
+.slider{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    border: 6px solid #fafac7;
+    border-radius: 10px;
+}
+.slide-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.slide-container img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.slide{
+    position: relative;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffc2c2;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+.prev {
+    left: 5px;
+}
+.next {
+    right: 5px;
+}
+.prev:hover,.next:hover {
+    background: #f4c542;
+    color: black;
+}
+.contact{
+    background-color: #fafac7;
     height: 100vh;
 }
 .contact h2{
     font-family: cursive;
     font-size: 70px;
-    color: #fafac7;
+    color: #ffc2c2;
     text-align: center;
     padding: 20px;
     font-weight: bold;
@@ -256,7 +367,7 @@
     padding: 0;
 }
 .contact-box{
-    background-color: #fafac7;  
+    background-color: #ffc2c2;  
     padding: 30px;               
     max-width: 400px;            
     margin: 0 auto;             
@@ -270,7 +381,7 @@
     justify-content: center;
     gap: 15px;
     margin-top: 20px;
-    background-color: #fafac7;
+    background-color: #ffc2c2;
 }
 label {
     font-weight: bold;
@@ -296,7 +407,7 @@ label {
 input[type="submit"] {
     width: 20%;
     padding: 10px;
-    background-color: #ffc2c2;
+    background-color: #fafac7;
     color: black;
     border: none;
     border-radius: 5px;
@@ -309,10 +420,29 @@ input[type="submit"]:hover {
 #font{
     font-size: 30px;
     margin: 10px;
-    color: #fafac7;
+    color: #ffc2c2;
 }
 #font:hover{
     color: #f4c542;
+}
+#Topbtn {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;              
+    transform: translateX(-50%);  
+    z-index: 4;
+    background-color: #ffc2c2;
+    color: black;
+    border: 2px solid whitesmoke;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: none; 
+}
+#Topbtn:hover {
+    background-color: #f0d9e7; 
+    color: black; 
 }
 .social-icons{
     text-align: center;
@@ -321,13 +451,13 @@ input[type="submit"]:hover {
 .social-icons i{
     font-size: 30px;
     margin: 10px;
-    color: #fafac7;
+    color: #ffc2c2;
 }
 .social-icons i:hover{
     color: #f4c542;
 }
 footer{
-    background-color: #fafac7;
+    background-color: #ffc2c2;
     text-align: center;
     padding: 2px;
     font-family: 'Poppins', Quicksand;
